@@ -38,7 +38,7 @@ const AnimeSpecificCard = React.forwardRef<
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F0b991d2b44e54dd8b9b06304908d1fe2%2Fed04e3fc01b6414986348004cc292e65?format=webp&width=800"
             alt="Naruto character"
-            className="w-full h-full object-contain drop-shadow-2xl"
+            className="w-full h-full object-contain drop-shadow-2xl pr-[138px] pb-[104px]"
           />
         </div>
 
