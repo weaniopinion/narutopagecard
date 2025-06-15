@@ -44,19 +44,14 @@ const AnimeSpecificCard = React.forwardRef<
       >
         {/* Image Section */}
         <div className="relative w-full aspect-[16/9] bg-zinc-800">
-          {imageUrl ? (
-            <img
-              src={imageUrl}
-              alt={imageAlt || title}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-full h-full bg-gradient-to-br from-zinc-700 to-zinc-800 flex items-center justify-center">
-              <span className="text-zinc-500 text-sm font-medium">
-                No Image Available
-              </span>
-            </div>
-          )}
+          <img
+            src={
+              imageUrl ||
+              "https://cdn.builder.io/api/v1/image/assets%2F0b991d2b44e54dd8b9b06304908d1fe2%2F2613360569db4ddf8e5e7b735f2a2313?format=webp&width=800"
+            }
+            alt={imageAlt || title}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Content Section */}
