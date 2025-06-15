@@ -54,7 +54,7 @@ const AnimeSpecificCard = React.forwardRef<
           />
 
           {/* Naruto Character Overlay */}
-          <div className="absolute -top-12 -left-8 z-10 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
+          <div className="absolute -top-20 -left-16 z-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F0b991d2b44e54dd8b9b06304908d1fe2%2Fed04e3fc01b6414986348004cc292e65?format=webp&width=800"
               alt="Naruto character"
