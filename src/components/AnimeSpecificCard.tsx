@@ -43,7 +43,7 @@ const AnimeSpecificCard = React.forwardRef<
         {...props}
       >
         {/* Image Section */}
-        <div className="relative w-full aspect-[16/9] bg-zinc-800">
+        <div className="relative w-full aspect-[16/9] bg-zinc-800 overflow-visible">
           <img
             src={
               imageUrl ||
@@ -52,8 +52,16 @@ const AnimeSpecificCard = React.forwardRef<
             alt={imageAlt || title}
             className="w-full h-full object-cover"
           />
-        </div>
 
+          {/* Naruto Character Overlay */}
+          <div className="absolute -top-4 -left-4 z-10 w-32 h-32 sm:w-40 sm:h-40">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F0b991d2b44e54dd8b9b06304908d1fe2%2Fed04e3fc01b6414986348004cc292e65?format=webp&width=800"
+              alt="Naruto character"
+              className="w-full h-full object-contain drop-shadow-lg"
+            />
+          </div>
+        </div>
         {/* Content Section */}
         <div className="px-6 py-5 sm:px-7 sm:py-6 flex-1">
           {/* Title */}
